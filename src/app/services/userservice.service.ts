@@ -14,6 +14,7 @@ export class UserserviceService {
 
   apiUser = environment.apiURL + "users/"
   apireto19 = environment.apireto19
+  apireto20=environment.apireto20
   getUsersAll():Observable<Users>{
     return this.http.get<Users>(this.apiUser)
   }
@@ -31,5 +32,8 @@ export class UserserviceService {
   //getpara interceptor
   getUserAllInterceptor():Observable<any>{
     return this.http.get(this.apiUser,{observe:"response"})
+  }
+  getre20mostrar():Observable<any>{
+    return this.http.get(this.apireto20,{observe:"response"})
   }
 }

@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { UserintersectorService } from '../services/userintersector.service';
 import { Reto19Component } from './reto19/reto19.component';
+import { Reto20Component } from './reto20/reto20.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Reto19Component } from './reto19/reto19.component';
     FormularioComponent,
     BusquedaComponent,
     MenuComponent,
-    Reto19Component
+    Reto19Component,
+    Reto20Component
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { Reto19Component } from './reto19/reto19.component';
     FormularioComponent,
     BusquedaComponent,
     MenuComponent,
-    Reto19Component
+    Reto19Component,
+    Reto20Component
   ],
   providers:[
     {

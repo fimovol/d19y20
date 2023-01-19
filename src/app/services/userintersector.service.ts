@@ -8,7 +8,7 @@ export class UserintersectorService implements HttpInterceptor {
 
   constructor() { }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    console.log("hola desde el intersector jejejej")
+    console.log("hola desde el intersector ")
     req = req.clone({
       setHeaders:{
         'Authorization':"token de autorizacion"}
