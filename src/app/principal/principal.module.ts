@@ -8,13 +8,15 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { UserintersectorService } from '../services/userintersector.service';
+import { Reto19Component } from './reto19/reto19.component';
 
 @NgModule({
   declarations: [
     VistaComponent,
     FormularioComponent,
     BusquedaComponent,
-    MenuComponent
+    MenuComponent,
+    Reto19Component
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { UserintersectorService } from '../services/userintersector.service';
     VistaComponent,
     FormularioComponent,
     BusquedaComponent,
-    MenuComponent
+    MenuComponent,
+    Reto19Component
   ],
   providers:[
     {

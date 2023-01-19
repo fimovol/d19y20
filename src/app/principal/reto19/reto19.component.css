@@ -1,0 +1,43 @@
+.container-sm {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+/* Estilo para el título de la tabla */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para los encabezados de la tabla */
+thead {
+    background-color: #333;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #666;
+}
+
+/* Estilos para las filas impares */
+tbody tr:nth-child(odd) {
+    background-color: #444;
+}
+th,td{
+    color: white;
+}
