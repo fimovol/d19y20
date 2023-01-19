@@ -41,3 +41,37 @@ tbody tr:nth-child(odd) {
 th,td{
     color: white;
 }
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@300;700&display=swap');
+
+table {
+    font-family: 'Futura', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  th {
+    background-color: #2196f3;
+  }
+  
+  td, th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  td{
+    color:black;
+  }
+  tr:nth-child(odd) > td {
+    color: rgb(215, 215, 215);
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
