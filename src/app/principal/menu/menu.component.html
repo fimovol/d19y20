@@ -30,6 +30,11 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" routerLink="asincrona19">asincrona 19 la tarea</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/login" *ngIf="!userLogin">iniciar sesion</a>
+                    <a class="nav-link active" aria-current="page" 
+                    routerLink="/login" *ngIf="userLogin" (click)="logout()">cerrar sesion</a>
+                </li>
             </ul>
         </div>
     </div>

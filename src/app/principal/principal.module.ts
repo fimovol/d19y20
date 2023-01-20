@@ -13,6 +13,8 @@ import { Reto20Component } from './reto20/reto20.component';
 import { RetoComponent } from './reto/reto.component';
 import { Asincrona20Component } from './asincrona20/asincrona20.component';
 import { AsincronaComponent } from './asincrona/asincrona.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { AsincronaComponent } from './asincrona/asincrona.component';
     Reto20Component,
     RetoComponent,
     Asincrona20Component,
-    AsincronaComponent
+    AsincronaComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   exports:[
     VistaComponent,
@@ -41,7 +45,8 @@ import { AsincronaComponent } from './asincrona/asincrona.component';
     Reto20Component,
     RetoComponent,
     Asincrona20Component,
-    AsincronaComponent
+    AsincronaComponent,
+    LoginComponent
   ],
   providers:[
     {
