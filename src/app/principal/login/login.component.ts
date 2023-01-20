@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     usuario: ['',{
       validators:[
         Validators.required,
-        Validators.email
+        //Validators.email
       ]
     }],
     password: ['',{
@@ -31,10 +31,23 @@ export class LoginComponent implements OnInit {
   urlRedireccion = ""
   ngOnInit(): void {
   }
+  Usuario_= "AD"
+  Password_= "123456"
+  contrasenaincorrecta = false
   login(){
-    this.autentificacion.login()
-    this.urlRedireccion = this.autentificacion.urlUsuarioIntentaAcceder
-    this.autentificacion.urlUsuarioIntentaAcceder = ''
-    this.router.navigate([this.urlRedireccion])
+    let usuarioeninput = this.registroform.value.usuario
+    let passwordEnInput = this.registroform.value.password
+    console.log(usuarioeninput)
+    console.log(passwordEnInput)
+    if(usuarioeninput == this.Usuario_ && passwordEnInput == this.Password_){
+      this.autentificacion.login()
+      this.urlRedireccion = this.autentificacion.urlUsuarioIntentaAcceder
+      this.autentificacion.urlUsuarioIntentaAcceder = ''
+      this.router.navigate([this.urlRedireccion]) 
+      console.log(typeof this.urlRedireccion)
+    }else{
+      this.contrasenaincorrecta = true
+    }
+    
   }
 }

@@ -1,5 +1,8 @@
 
 <section class="col-3 container mt-5">
+    <section *ngIf="contrasenaincorrecta" class="incorrecto">
+        <h4>tu contraseña o tu usuario son incorrectos</h4>
+    </section>
     <form [formGroup]="registroform">
         <section class="form-group">
             <label for="username" class="mt-3 h3">Username:</label>
