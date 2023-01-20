@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Asincrona20Component } from './principal/asincrona20/asincrona20.component';
+import { AsincronaComponent } from './principal/asincrona/asincrona.component';
 import { BusquedaComponent } from './principal/busqueda/busqueda.component';
 import { FormularioComponent } from './principal/formulario/formulario.component';
 import { Reto19Component } from './principal/reto19/reto19.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:"reto19",component:Reto19Component},
   {path:"reto20",component:Reto20Component},
   {path:"reto",component:RetoComponent},
-  {path:"asin20",component:Asincrona20Component}
+  {path:"asin20",component:Asincrona20Component},
+  {path:"asincrona19",component:AsincronaComponent},
 ];
 
 @NgModule({

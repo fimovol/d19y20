@@ -12,6 +12,7 @@ import { Reto19Component } from './reto19/reto19.component';
 import { Reto20Component } from './reto20/reto20.component';
 import { RetoComponent } from './reto/reto.component';
 import { Asincrona20Component } from './asincrona20/asincrona20.component';
+import { AsincronaComponent } from './asincrona/asincrona.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Asincrona20Component } from './asincrona20/asincrona20.component';
     Reto19Component,
     Reto20Component,
     RetoComponent,
-    Asincrona20Component
+    Asincrona20Component,
+    AsincronaComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,8 @@ import { Asincrona20Component } from './asincrona20/asincrona20.component';
     Reto19Component,
     Reto20Component,
     RetoComponent,
-    Asincrona20Component
+    Asincrona20Component,
+    AsincronaComponent
   ],
   providers:[
     {
