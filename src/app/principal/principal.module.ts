@@ -11,6 +11,7 @@ import { UserintersectorService } from '../services/userintersector.service';
 import { Reto19Component } from './reto19/reto19.component';
 import { Reto20Component } from './reto20/reto20.component';
 import { RetoComponent } from './reto/reto.component';
+import { Asincrona20Component } from './asincrona20/asincrona20.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RetoComponent } from './reto/reto.component';
     MenuComponent,
     Reto19Component,
     Reto20Component,
-    RetoComponent
+    RetoComponent,
+    Asincrona20Component
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,8 @@ import { RetoComponent } from './reto/reto.component';
     MenuComponent,
     Reto19Component,
     Reto20Component,
-    RetoComponent
+    RetoComponent,
+    Asincrona20Component
   ],
   providers:[
     {

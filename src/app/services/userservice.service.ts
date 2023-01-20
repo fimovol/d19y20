@@ -17,6 +17,8 @@ export class UserserviceService {
   apireto19 = environment.apireto19
   apireto20=environment.apireto20
   asincronaURL = environment.asincronaURL
+  apiasincrona20 = environment.apiURL + "posts/"
+
   getUsersAll():Observable<Users>{
     return this.http.get<Users>(this.apiUser)
   }
@@ -41,5 +43,8 @@ export class UserserviceService {
   //asincrona tarea 18 
   postAsincrona(post:Daum){
     return this.http.post<Daum>(this.asincronaURL,post)
+  }
+  getasincrona20():Observable<any>{
+    return this.http.get(this.apiasincrona20,{observe:"response"})
   }
 }
