@@ -12,6 +12,7 @@ export class UserserviceService {
   constructor(private http:HttpClient) { }
 
   apiUser = environment.apiURL + "users/"
+  apiasincrona20 = environment.apiURL + "posts/"
 
   getUsersAll():Observable<Users>{
     return this.http.get<Users>(this.apiUser)
@@ -27,5 +28,8 @@ export class UserserviceService {
   //getpara interceptor
   getUserAllInterceptor():Observable<any>{
     return this.http.get(this.apiUser,{observe:"response"})
+  }
+  getasincrona20():Observable<any>{
+    return this.http.get(this.apiasincrona20,{observe:"response"})
   }
 }
