@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Root } from '../models/reto19';
+import { Daum } from '../models/asincronareto18';
 import { User, Users,Userounde } from '../models/users';
 
 @Injectable({
@@ -15,6 +16,9 @@ export class UserserviceService {
   apiUser = environment.apiURL + "users/"
   apireto19 = environment.apireto19
   apireto20=environment.apireto20
+  asincronaURL = environment.asincronaURL
+  apiasincrona20 = environment.apiURL + "posts/"
+
   getUsersAll():Observable<Users>{
     return this.http.get<Users>(this.apiUser)
   }
@@ -35,5 +39,12 @@ export class UserserviceService {
   }
   getre20mostrar():Observable<any>{
     return this.http.get(this.apireto20,{observe:"response"})
+  }
+  //asincrona tarea 18 
+  postAsincrona(post:Daum){
+    return this.http.post<Daum>(this.asincronaURL,post)
+  }
+  getasincrona20():Observable<any>{
+    return this.http.get(this.apiasincrona20,{observe:"response"})
   }
 }

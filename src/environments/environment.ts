@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   apiURL:"https://jsonplaceholder.typicode.com/",
   apireto19: "https://jsonplaceholder.typicode.com/albums",
-  apireto20: "https://jsonplaceholder.typicode.com/comments"
+  apireto20: "https://jsonplaceholder.typicode.com/comments",
+  asincronaURL: "https://reqres.in/api/registerUser"
 };
 
 /*
