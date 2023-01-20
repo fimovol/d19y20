@@ -21,8 +21,8 @@ const routes: Routes = [
   {path:"asin20",component:Asincrona20Component,canActivate: [CanactivateGuard]},
   {path:"asincrona19",component:AsincronaComponent,canActivate: [CanactivateGuard]},
   {path:"login",component:LoginComponent},
-  {path:"",component:LoginComponent},
-  {path:"**",component:LoginComponent},
+  {path:"",component:VistaComponent,canActivate: [CanactivateGuard]},
+  {path:"**",component:VistaComponent,canActivate: [CanactivateGuard]},
 ];
 
 @NgModule({
