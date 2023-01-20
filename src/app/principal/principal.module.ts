@@ -10,6 +10,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { UserintersectorService } from '../services/userintersector.service';
 import { Reto19Component } from './reto19/reto19.component';
 import { Reto20Component } from './reto20/reto20.component';
+import { RetoComponent } from './reto/reto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Reto20Component } from './reto20/reto20.component';
     BusquedaComponent,
     MenuComponent,
     Reto19Component,
-    Reto20Component
+    Reto20Component,
+    RetoComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { Reto20Component } from './reto20/reto20.component';
     BusquedaComponent,
     MenuComponent,
     Reto19Component,
-    Reto20Component
+    Reto20Component,
+    RetoComponent
   ],
   providers:[
     {
