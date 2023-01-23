@@ -1,0 +1,71 @@
+<!-- <form (submit)="onSubmit()">
+    <section>
+        <label for="">nombre</label>
+        <input [(ngModel)]="nombre" name="nombre" placeholder="Email" #emailRef="ngModel" required>
+    </section>
+    <section>
+        <label for="">apellido</label>
+        <input [(ngModel)]="apellido"  name="apellido" placeholder="apellido" #emailRef="ngModel" required>
+    </section>
+    <section>
+        <label for="">username</label>
+        <input [(ngModel)]="user"  name="username" placeholder="username" #emailRef="ngModel" required>
+    </section>    
+    <section>
+        <label for="">password</label>
+        <input [(ngModel)]="pass"  name="password" placeholder="Email" #emailRef="ngModel" required>
+    </section>    
+    <section>
+        <button type="submit">registrar</button>
+        <button type="button">cancelar</button>
+    </section>
+    
+    </form> -->
+    <section class="container mt-4">
+        <form class="form-group" (submit)="onSubmit()">
+        <section class="form-group">
+        <label for="firstname">First Name</label>
+        <input
+        type="text"
+        class="form-control"
+        id="firstname"
+        name="name"
+        [(ngModel)]="nombre"
+        />
+        </section>
+        <section class="form-group">
+        <label for="lastname">Last Name</label>
+        <input
+        type="text"
+        class="form-control"
+        id="lastname"
+        name="ape"
+        [(ngModel)]="apellido"
+        />
+        </section>
+        <section class="form-group">
+        <label for="username">Username</label>
+        <input
+        type="text"
+        class="form-control"
+        id="username"
+        name="user"
+        [(ngModel)]="user"
+        />
+        </section>
+        <section class="form-group">
+        <label for="password">Password</label>
+        <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="pass"
+        [(ngModel)]="pass"
+        />
+        </section>
+        <section class="form-group">
+        <button [disabled]="!pass"  class="btn btn-primary m-2" type="submit">Register</button>
+        <button class="btn btn-secondary m-2" type="button">Cancel</button>
+        </section>
+        </form>
+        </section>
