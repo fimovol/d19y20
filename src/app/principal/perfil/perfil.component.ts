@@ -10,20 +10,21 @@ export class PerfilComponent implements OnInit {
   
   dato:string | null = ""
   datos:Datosasd = {nombre:"",apellido:"",user:""}
-  nombre = ""
-  apellido = ""
-  user = ""
+  nombre = "javier"
+  apellido = "sanchez"
+  user = "asd@asd.com"
   constructor() { }
 
   ngOnInit(): void {
     this.dato = localStorage.getItem('datos');
       
-    if(typeof this.dato === 'string'){
-      this.datos=JSON.parse(this.dato)
-      this.nombre = this.datos.nombre
-      this.apellido = this.datos.apellido
-      this.user = this.datos.user
-    }
+    // if(typeof this.dato === 'string'){
+    //   this.datos=JSON.parse(this.dato)
+    //   this.nombre = this.datos.nombre
+    //   this.apellido = this.datos.apellido
+    //   this.user = this.datos.user
+    // }
+
   }
   
 }

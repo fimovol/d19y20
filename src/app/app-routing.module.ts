@@ -14,6 +14,7 @@ import { MensajeComponent } from './principal/mensaje/mensaje.component';
 import { CandesactivateGuard } from './candesactivate.guard';
 import { RetoformregistroComponent } from './principal/retoformregistro/retoformregistro.component';
 import { PerfilComponent } from './principal/perfil/perfil.component';
+import { NoautorizadoComponent } from './principal/noautorizado/noautorizado.component';
 
 const routes: Routes = [
   {path:"vista",component:VistaComponent,canActivate: [CanactivateGuard]},
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path:"registro",component:RetoformregistroComponent,canDeactivate: [CandesactivateGuard],canActivate: [CanactivateGuard]},
   {path:"perfil",component:PerfilComponent,canActivate: [CanactivateGuard]},
   {path:"login",component:LoginComponent},
+  {path:"noautorizado",component:NoautorizadoComponent},
   {path:"",component:VistaComponent,canActivate: [CanactivateGuard]},
   {path:"**",component:VistaComponent,canActivate: [CanactivateGuard]},
 ];

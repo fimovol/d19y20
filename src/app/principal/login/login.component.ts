@@ -44,6 +44,7 @@ export class LoginComponent implements OnInit {
       this.urlRedireccion = this.autentificacion.urlUsuarioIntentaAcceder
       this.autentificacion.urlUsuarioIntentaAcceder = ''
       this.router.navigate([this.urlRedireccion]) 
+      this.router.navigate(['/perfil']) 
       console.log(typeof this.urlRedireccion)
     }else{
       this.contrasenaincorrecta = true

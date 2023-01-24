@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MensajeComponent } from './mensaje/mensaje.component';
 import { RetoformregistroComponent } from './retoformregistro/retoformregistro.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { NoautorizadoComponent } from './noautorizado/noautorizado.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     LoginComponent,
     MensajeComponent,
     RetoformregistroComponent,
-    PerfilComponent
+    PerfilComponent,
+    NoautorizadoComponent
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     LoginComponent,
     MensajeComponent,
     RetoformregistroComponent,
-    PerfilComponent
+    PerfilComponent,
+    NoautorizadoComponent
   ],
   providers:[
     {

@@ -15,7 +15,7 @@ export class CanactivateGuard implements CanActivate {
     if(this.autentificacion.isLoggedIn(state.url)){
       return true;
     }
-    this.router.navigate(['/login'])
+    this.router.navigate(['/noautorizado'])
     return false
   }
   
