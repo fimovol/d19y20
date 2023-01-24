@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     usuario: ['',{
       validators:[
         Validators.required,
-        //Validators.email
+        Validators.email
       ]
     }],
     password: ['',{
@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
   urlRedireccion = ""
   ngOnInit(): void {
   }
-  Usuario_= "AD"
+  Usuario_= "asd@asd.com"
   Password_= "123456"
   contrasenaincorrecta = false
   login(){
@@ -44,6 +44,7 @@ export class LoginComponent implements OnInit {
       this.urlRedireccion = this.autentificacion.urlUsuarioIntentaAcceder
       this.autentificacion.urlUsuarioIntentaAcceder = ''
       this.router.navigate([this.urlRedireccion]) 
+      this.router.navigate(['/perfil']) 
       console.log(typeof this.urlRedireccion)
     }else{
       this.contrasenaincorrecta = true

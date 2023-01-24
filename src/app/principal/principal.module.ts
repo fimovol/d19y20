@@ -15,6 +15,10 @@ import { Asincrona20Component } from './asincrona20/asincrona20.component';
 import { AsincronaComponent } from './asincrona/asincrona.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MensajeComponent } from './mensaje/mensaje.component';
+import { RetoformregistroComponent } from './retoformregistro/retoformregistro.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { NoautorizadoComponent } from './noautorizado/noautorizado.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     RetoComponent,
     Asincrona20Component,
     AsincronaComponent,
-    LoginComponent
+    LoginComponent,
+    MensajeComponent,
+    RetoformregistroComponent,
+    PerfilComponent,
+    NoautorizadoComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +54,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     RetoComponent,
     Asincrona20Component,
     AsincronaComponent,
-    LoginComponent
+    LoginComponent,
+    MensajeComponent,
+    RetoformregistroComponent,
+    PerfilComponent,
+    NoautorizadoComponent
   ],
   providers:[
     {

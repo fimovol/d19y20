@@ -24,12 +24,12 @@
                     la contraseña es obligatoria
                 </section>
                 <section *ngIf="password?.errors?.['minlength']" class="alert alert-success">
-                    minlength
+                    minimo de 6 caracteres
                 </section>
             </section>
         </section>
         <div class="botoncentrado p-4">
-            <input class="btn btn-primary" [disabled]="registroform.invalid" (click)="login()" value="iniciar sesion">
+            <input type="button" class="btn btn-primary" [disabled]="registroform.invalid" (click)="login()" value="iniciar sesion">
         </div>
     </form>
 </section>

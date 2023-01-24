@@ -4,3 +4,10 @@ interface Random{
     body:string,
     title:string
 }
+export interface Datosasd{
+    
+    nombre:string,
+    apellido:string,
+    user: string,
+   
+  }
