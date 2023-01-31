@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
   Usuario_= "asd@asd.com"
   Password_= "123456"
   contrasenaincorrecta = false
+  login_ = true
   login(){
     let usuarioeninput = this.registroform.value.usuario
     let passwordEnInput = this.registroform.value.password
@@ -46,8 +47,10 @@ export class LoginComponent implements OnInit {
       this.router.navigate([this.urlRedireccion]) 
       this.router.navigate(['/perfil']) 
       console.log(typeof this.urlRedireccion)
+      this.login_ =true
     }else{
       this.contrasenaincorrecta = true
+      this.login_= false
     }
     
   }
